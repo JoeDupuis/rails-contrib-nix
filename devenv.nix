@@ -10,7 +10,18 @@
         { name = "activerecord_unittest2"; }
       ];
     };
-    mysql.enable = true;
+    mysql = {
+      enable = true;
+      ensureUsers = [
+        {
+          name = "rails";
+          ensurePermissions = {
+            "*.*" = "ALL PRIVILEGES";
+          };
+        }
+      ];
+
+    };
     redis.enable = true;
     memcached.enable = true;
   };
