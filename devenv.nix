@@ -2,6 +2,10 @@
 {
 
 
+  env = {
+    OVERMIND_PROCFILE = config.procfile;
+  };
+
   services = {
     postgres = {
       enable = true;
@@ -47,7 +51,7 @@
     mupdf
     poppler
     vips
-
+    overmind
   ];
 
   languages.ruby.enable = true;
