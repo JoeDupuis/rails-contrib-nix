@@ -16,6 +16,11 @@
     };
     mysql = {
       enable = true;
+      settings = {
+        mysqld = {
+          default-time-zone = "+00:00";
+        };
+      };
       ensureUsers = [
         {
           name = "rails";
