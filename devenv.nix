@@ -13,10 +13,6 @@
   services = {
     postgres = {
       enable = true;
-      initialDatabases = [
-        { name = "activerecord_unittest"; }
-        { name = "activerecord_unittest2"; }
-      ];
     };
     mysql = {
       enable = true;
