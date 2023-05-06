@@ -6,6 +6,10 @@
     OVERMIND_PROCFILE = config.procfile;
   };
 
+  enterShell = ''
+    export C_INCLUDE_PATH="$C_INCLUDE_PATH:${pkgs.libxml2.dev}/include/libxml2"
+  '';
+
   services = {
     postgres = {
       enable = true;
@@ -30,10 +34,6 @@
     memcached.enable = true;
   };
 
-
-  enterShell = ''
-    export C_INCLUDE_PATH="$C_INCLUDE_PATH:${pkgs.libxml2.dev}/include/libxml2"
-  '';
 
   packages = with pkgs; [
     git
