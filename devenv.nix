@@ -37,6 +37,8 @@
 
 
   packages = with pkgs; [
+    docker-compose
+    docker
     git
     openssl_1_1
     libyaml
