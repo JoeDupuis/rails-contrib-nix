@@ -53,6 +53,7 @@
     poppler
     vips
     overmind
+    ctags
   ];
 
   languages.ruby.enable = true;
