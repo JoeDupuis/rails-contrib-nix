@@ -53,6 +53,7 @@
     ffmpeg
     mupdf
     poppler
+    poppler_utils
     vips
     overmind
     ctags
