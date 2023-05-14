@@ -62,6 +62,7 @@ in {
     vips
     overmind
     ctags
+    readline
   ];
 
   languages.ruby.enable = true;
