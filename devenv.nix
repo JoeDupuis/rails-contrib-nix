@@ -44,6 +44,7 @@ in {
     docker-compose
     docker
     git
+    glib
     openssl_1_1
     libyaml
     libxml2
