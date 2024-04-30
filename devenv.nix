@@ -1,11 +1,5 @@
 { config, pkgs, ... }:
-
-let
-  vips = pkgs.callPackage ./vips.nix {
-    inherit (pkgs.darwin.apple_sdk.frameworks) ApplicationServices Foundation;
-    cgif = pkgs.callPackage ./cgif.nix {};
-  };
-in {
+{
   env = {
     OVERMIND_PROCFILE = config.procfile;
   };
