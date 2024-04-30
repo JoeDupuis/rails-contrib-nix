@@ -45,7 +45,8 @@ in {
     docker
     git
     glib
-    openssl_1_1
+    glibc
+    openssl
     libyaml
     libxml2
     redis
@@ -63,6 +64,11 @@ in {
     overmind
     ctags
     readline
+    chromedriver
+    chromium
+
+    # Required by stable branches
+    ncurses
   ];
 
   languages.ruby.enable = true;
