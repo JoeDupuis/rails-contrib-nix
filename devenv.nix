@@ -72,6 +72,6 @@ in {
   ];
 
   languages.ruby.enable = true;
-  languages.ruby.version = "3.1.0";
+  languages.ruby.version = "3.2.0";
 
 }
