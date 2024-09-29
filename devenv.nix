@@ -67,6 +67,6 @@
   ];
 
   languages.ruby.enable = true;
-  languages.ruby.version = "3.2.0";
+  languages.ruby.version = "3.3.5";
 
 }
