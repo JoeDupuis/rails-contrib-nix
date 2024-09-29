@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 {
   env = {
-    OVERMIND_PROCFILE = config.procfile;
     LD_LIBRARY_PATH = "${config.devenv.profile}/lib";
     NIX_HARDENING_ENABLE = "";
   };
@@ -35,6 +34,9 @@
     memcached.enable = true;
   };
 
+  scripts.start-services.exec = ''
+    OVERMIND_PROCFILE="${config.procfile}" ${pkgs.overmind}/bin/overmind s
+  '';
 
   packages = with pkgs; [
     docker-compose
