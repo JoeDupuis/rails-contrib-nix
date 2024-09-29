@@ -3,6 +3,7 @@
   env = {
     OVERMIND_PROCFILE = config.procfile;
     LD_LIBRARY_PATH = "${config.devenv.profile}/lib";
+    NIX_HARDENING_ENABLE = "";
   };
 
   enterShell = ''
