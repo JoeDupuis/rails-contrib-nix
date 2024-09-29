@@ -31,6 +31,7 @@
       ensureUsers = [
         {
           name = "rails";
+          password = "";
           ensurePermissions = {
             "*.*" = "ALL PRIVILEGES";
           };
