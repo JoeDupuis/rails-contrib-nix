@@ -43,10 +43,6 @@
     memcached.enable = true;
   };
 
-  scripts.start-services.exec = ''
-    OVERMIND_PROCFILE="${config.procfile}" ${pkgs.overmind}/bin/overmind s
-  '';
-
   packages = with pkgs; [
     docker-compose
     docker
