@@ -12,6 +12,10 @@
   services = {
     postgres = {
       enable = true;
+      initialDatabases = [
+        { name = "activerecord_unittest";}
+        { name = "activerecord_unittest2";}
+      ];
     };
     mysql = {
       enable = true;
@@ -20,6 +24,10 @@
           default-time-zone = "+00:00";
         };
       };
+      initialDatabases = [
+        { name = "activerecord_unittest";}
+        { name = "activerecord_unittest2";}
+      ];
       ensureUsers = [
         {
           name = "rails";
