@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+[ ! -d "$DEVENV_ROOT/workspace/rails" ] && git clone https://github.com/rails/rails workspace/rails
+rm -rf $DEVENV_STATE
+(cd "$DEVENV_ROOT/workspace/rails" && bundle install)
