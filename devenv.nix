@@ -5,6 +5,7 @@
     LD_LIBRARY_PATH = "${config.devenv.profile}/lib";
     NIX_HARDENING_ENABLE = "";
     OVERMIND_PROCFILE="${config.procfile}";
+    OBJC_DISABLE_INITIALIZE_FORK_SAFETY = "YES";
   };
 
   enterShell = ''
