@@ -70,9 +70,6 @@
     ctags
     readline
     chromedriver
-    chromium
-
-    # Required by stable branches
     ncurses
   ];
 
